@@ -28,9 +28,11 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    
+
+    <div id="display"></div>
+
     <div class="container">
-      <form>
+      <form id="button-form">
         <div class="form-group col-md-2">
           <label for="inputTask">9:00 AM</label>
           <input type="text" class="form-control" id="inputTask1">
@@ -85,11 +87,22 @@
         </div>
         <button type="submit" class="btn btn-primary">Finished</button>
       
+        <input type="button" id="button" value = "button" style= "color:white" onclick="setColor('button', '#101010')";/>
+
       </form>
     </div>
 
 
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src ="script.js">
+    </script>
+        <!-- <script>
+      $("#btn btn-primary").on("click", function() {
+    $("#display").empty();
+
+    });
+    </script> -->
   </body>
 </html>

@@ -1,26 +1,22 @@
-// $("button").click(function(){
-//     $("p").hide();
-//   });
 
-function handleclick (event) {
-    event.preventDefault()
-    sections[index].classList.add("hide");
-    index ++
-    console.log("click")
-    sections[index].classList.remove("hide");
-  }
+var time = moment().format('LTS');
 
+var form = document.getElementById("button-form")
+form.addEventListener("submit", function(event){
+event.preventDefault()
+console.log
+})
 
-  function myFunction() {
-    var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
+var count = 1;
+    function setColor(btn, color) {
+        var property = document.getElementById(btn);
+        if (count == 0) {
+            property.style.backgroundColor = "#FFFFFF"
+            count = 1;        
+        }
+        else {
+            property.style.backgroundColor = "#7FFF00"
+            count = 0;
+        }
     }
-  }
 
-  $("#btn btn-primary").on("click", function() {
-    $("#display").empty();
-
-  });
