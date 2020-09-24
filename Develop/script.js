@@ -37,34 +37,25 @@ for (var i = 0; i < buttons.length; i++) {
   if (lstoragevalue !== null) {
     input.value = lstoragevalue
   }
-  var labels = document.getElementsByTagName("label")
-  console.log(labels)
-  // Get the for attribute
-  // compare times
-  // get time out of the row
 }
 
-// console.log(moment().format('LT'))
 const momentTime = moment().format('LT')
 console.log(momentTime)
-var test = document.getElementById('test').textContent
-console.log(test)
-// const splitter = test.split(':')
-// console.log(splitter)
-for (var i = 0; i < test.length; i++) {
-if (momentTime < test) {
+// var test = document.getElementById('color').textContent
+// console.log(test)
+for (var i = 0; i < 9; i++) {
+if (momentTime > test) {
+  document.getElementById("color_"+i).className = "past";
+ }
+ else if (momentTime < test) {
+   console.log(i, "else if")
+  document.getElementById("color_"+i).className = "future";
 
+ }
+ console.log(test)
 }
-}
 
 
 
-// Set the color to green before the current time stated by the button
-// Set color orange when it is during the hour stated by the button
-// Set the color red when it is after the hour stated by the button
-// Set Moment into a variable to be utilized in the while loop
-
-// var standard = moment().format('LT')
-// while (standard < )
 
 
